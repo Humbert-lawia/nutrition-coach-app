@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Lapin Bros - Niveau 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Super Lapin Bros</h1>
+        <div class="score-container">
+            <div>Score: <span id="score">0</span></div>
+            <div>Fleurs: <span id="flowers">0</span></div>
+            <div>Vies: <span id="lives">3</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <p><strong>Contr&ocirc;les:</strong></p>
+            <p>← → : Se d&eacute;placer</p>
+            <p>Espace : Sauter</p>
+            <p>R : Recommencer</p>
+        </div>
+        <div id="gameOver" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Score final: <span id="finalScore">0</span></p>
+            <button onclick="restartGame()">Rejouer</button>
+        </div>
+        <div id="victory" class="victory hidden">
+            <h2>Victoire! 🎉</h2>
+            <p>Score final: <span id="victoryScore">0</span></p>
+            <button onclick="restartGame()">Rejouer</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

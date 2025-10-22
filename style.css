@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #5c94fc 0%, #5c94fc 70%, #88d888 70%, #88d888 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: #e84545;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0px #fff, 5px 5px 0px #e84545;
+    letter-spacing: 2px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#gameCanvas {
+    border: 5px solid #333;
+    border-radius: 10px;
+    background: #5c94fc;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    color: #333;
+}
+
+.controls p {
+    margin: 5px 0;
+}
+
+.controls strong {
+    color: #e84545;
+}
+
+.game-over, .victory {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.game-over h2 {
+    color: #e84545;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.victory h2 {
+    color: #4caf50;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.game-over p, .victory p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    background: #e84545;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #c93434;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
